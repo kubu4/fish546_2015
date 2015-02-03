@@ -1,6 +1,6 @@
 Workflow for reproducing differential gene expression analysis in pre- and post-heat shock mantle tissue from Crassostrea gigas (Pacific oyster).
 
-###Illumina FASTQ Data (single-end sequencing)
+###Illumina FASTQ Data (single-end reads)
 
 *Pre-heat shock (gzipped fastq)*
 
