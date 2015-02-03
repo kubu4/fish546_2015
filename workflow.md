@@ -15,12 +15,16 @@ Software
 
 -[fastx_toolkit v0.0.13.2](http://hannonlab.cshl.edu/fastx_toolkit/index.html)
 
-  fastx_trimmer
+*fastx_trimmer
 
 -[Cufflinks Package v2.2.1](http://cole-trapnell-lab.github.io/cufflinks/install/)
 
-  Cufflinks
-  Cuffmerge
-  Cuffquant
-  Cuffdiff
-  CummeRbund
+*Cufflinks
+
+*Cuffmerge
+
+*Cuffquant
+
+*Cuffdiff
+*CummeRbund
+
