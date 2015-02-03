@@ -4,19 +4,15 @@ Workflow for reproducing differential gene expression analysis in pre- and post-
 
 *Pre-heat shock (gzipped fastq)*
 
-[2M](http://owl.fish.washington.edu/nightingales/C_gigas/2M_AGTCAA_L001_R1_001.fastq.gz)
-
-[4M](http://owl.fish.washington.edu/nightingales/C_gigas/4M_AGTTCC_L001_R1_001.fastq.gz)
-
-[6M](http://owl.fish.washington.edu/nightingales/C_gigas/6M_ATGTCA_L001_R1_001.fastq.gz)
+* [2M](http://owl.fish.washington.edu/nightingales/C_gigas/2M_AGTCAA_L001_R1_001.fastq.gz)
+* [4M](http://owl.fish.washington.edu/nightingales/C_gigas/4M_AGTTCC_L001_R1_001.fastq.gz)
+* [6M](http://owl.fish.washington.edu/nightingales/C_gigas/6M_ATGTCA_L001_R1_001.fastq.gz)
 
 *Post-heat shock (gzipped fastq)*
 
-[2M-HS](http://owl.fish.washington.edu/nightingales/C_gigas/2M-HS_CCGTCC_L001_R1_001.fastq.gz)
-
-[4M-HS](http://owl.fish.washington.edu/nightingales/C_gigas/4M-HS_GTCCGC_L001_R1_001.fastq.gz)
-
-[6M-HS](http://owl.fish.washington.edu/nightingales/C_gigas/6M-HS_GTGAAA_L001_R1_001.fastq.gz)
+* [2M-HS](http://owl.fish.washington.edu/nightingales/C_gigas/2M-HS_CCGTCC_L001_R1_001.fastq.gz)
+* [4M-HS](http://owl.fish.washington.edu/nightingales/C_gigas/4M-HS_GTCCGC_L001_R1_001.fastq.gz)
+* [6M-HS](http://owl.fish.washington.edu/nightingales/C_gigas/6M-HS_GTGAAA_L001_R1_001.fastq.gz)
 
 
 
@@ -30,17 +26,13 @@ Workflow for reproducing differential gene expression analysis in pre- and post-
 
 -[fastx_toolkit v0.0.13.2](http://hannonlab.cshl.edu/fastx_toolkit/index.html)
 
-*fastx_trimmer
+* fastx_trimmer
 
 -[Cufflinks Package v2.2.1](http://cole-trapnell-lab.github.io/cufflinks/install/)
 
-*Cufflinks
-
-*Cuffmerge
-
-*Cuffquant
-
-*Cuffdiff
-
-*CummeRbund
+* Cufflinks
+* Cuffmerge
+* Cuffquant
+*  Cuffdiff
+* CummeRbund
 
