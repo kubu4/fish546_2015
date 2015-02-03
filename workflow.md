@@ -1,13 +1,13 @@
 Workflow for reproducing differential gene expression analysis in pre- and post-heat shock mantle tissue from Crassostrea gigas (Pacific oyster).
 
-Illumina FASTQ Data
+#Illumina FASTQ Data
 
 
 
 
 
 
-Software
+#Software
 
 -[TopHat v2.0.13](http://ccb.jhu.edu/software/tophat/index.shtml)
 
