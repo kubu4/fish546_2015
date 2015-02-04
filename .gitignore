@@ -1,3 +1,4 @@
+.ipynb_checkpoints/*
 .DS_Store
 ./gigasHSrnaSeq/analysis/tophat_postHS/accepted_hits.bam
 ./gigasHSrnaSeq/analysis/tophat_postHS/tophat_out/accepted_hits.bam
