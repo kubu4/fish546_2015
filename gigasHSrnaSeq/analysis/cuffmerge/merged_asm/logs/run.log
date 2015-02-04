@@ -1,0 +1,7 @@
+/usr/local/bioinformatics/cufflinks-2.2.1.OSX_x86_64/cuffmerge -p 7 cufflinksManifest.txt
+gtf_to_sam -F /Volumes/Data/Sam/fish546_2015/gigasHSrnaSeq/analysis/cufflinks_preHS/transcripts.gtf ./merged_asm/tmp/gtf2sam_tmp.0.400bUt
+gtf_to_sam -F /Volumes/Data/Sam/fish546_2015/gigasHSrnaSeq/analysis/cufflinks_postHS/transcripts.gtf ./merged_asm/tmp/gtf2sam_tmp.1.IMr8CZ
+sort -k 3,3 -k 4,4n --temporary-directory=./merged_asm//tmp/ ./merged_asm/tmp/gtf2sam_tmp.0.400bUt ./merged_asm/tmp/gtf2sam_tmp.1.IMr8CZ > ./merged_asm/tmp/mergeSam_tmp.2.1DHrjI
+cufflinks -o ./merged_asm/ -F 0.05 -q --overhang-tolerance 200 --library-type=transfrags -A 0.0 --min-frags-per-transfrag 0 --no-5-extend -p 7 ./merged_asm/tmp/mergeSam_tmp.2.1DHrjI
+cuffcompare -o tmp_meta_asm -C -G  ./merged_asm//transcripts.gtf
+cuffcompare -o tmp_meta_asm -C -G  ./merged_asm//merged.gtf
