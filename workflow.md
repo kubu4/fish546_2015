@@ -103,3 +103,49 @@ $gunzip ./raw_data/6M_AGTCAA_L001_R1_001.fastq.gz -c > \
 $gunzip ./raw_data/6M_AGTCAA_L001_R1_001.fastq.gz -c > \
 ./raw_data/6M-HS_AGTCAA_L001_R1_001.fastq
 ```
+
+Trim first 15 nucleotides
+
+>Should be changed to for loop
+>so that this isn't project specific
+```
+$fastx_trimmer -Q33 -f 15 -z \
+-i ./raw_data/2M_CCGTCC_L001_R1_001.fastq \
+-o ./raw_data/2M_fastx_trimmed.fastq.gz
+```
+
+
+```
+$fastx_trimmer -Q33 -f 15 -z \
+-i ./raw_data/2M-HS_CCGTCC_L001_R1_001.fastq \
+-o ./raw_data/2MHS_fastx_trimmed.fastq.gz
+```
+
+
+```
+$fastx_trimmer -Q33 -f 15 -z \
+-i ./raw_data/4M_CCGTCC_L001_R1_001.fastq \
+-o ./raw_data/4M_fastx_trimmed.fastq.gz
+```
+
+
+```
+$fastx_trimmer -Q33 -f 15 -z \
+-i ./raw_data/4M-HS_CCGTCC_L001_R1_001.fastq \
+-o ./raw_data/4MHS_fastx_trimmed.fastq.gz
+```
+
+
+```
+$fastx_trimmer -Q33 -f 15 -z \
+-i ./raw_data/6M_CCGTCC_L001_R1_001.fastq \
+-o ./raw_data/6M_fastx_trimmed.fastq.gz
+```
+
+
+```
+$fastx_trimmer -Q33 -f 15 -z \
+-i ./raw_data/6M-HS_CCGTCC_L001_R1_001.fastq \
+-o ./raw_data/6MHS_fastx_trimmed.fastq.gz
+
+```
