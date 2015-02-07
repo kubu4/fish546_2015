@@ -62,6 +62,44 @@ $fastqc --outdir=./analysis/fastqc \
 
 ###Trim first 15 nucleotides with fastx_trimmer
 
+Can't run on gzipped files.
+
+gunzip files
+
+>Should be done with a for loop
+>so that the code is usable outside of this project.
+```
+$gunzip ./raw_data/2M_AGTCAA_L001_R1_001.fastq.gz -c > \
+./raw_data/2M_AGTCAA_L001_R1_001.fastq
 ```
 
+```
+$gunzip ./raw_data/2M-HS_AGTCAA_L001_R1_001.fastq.gz -c > \
+./raw_data/2M-HS_AGTCAA_L001_R1_001.fastq
+
+```
+
+
+```
+$gunzip ./raw_data/4M_AGTCAA_L001_R1_001.fastq.gz -c > \
+./raw_data/4M_AGTCAA_L001_R1_001.fastq
+
+```
+
+
+```
+$gunzip ./raw_data/4M-HS_AGTCAA_L001_R1_001.fastq.gz -c > \
+./raw_data/4M-HS_AGTCAA_L001_R1_001.fastq
+```
+
+
+```
+$gunzip ./raw_data/6M_AGTCAA_L001_R1_001.fastq.gz -c > \
+./raw_data/6M_AGTCAA_L001_R1_001.fastq
+```
+
+
+```
+$gunzip ./raw_data/6M_AGTCAA_L001_R1_001.fastq.gz -c > \
+./raw_data/6M-HS_AGTCAA_L001_R1_001.fastq
 ```
