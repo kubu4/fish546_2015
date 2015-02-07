@@ -175,7 +175,7 @@ $bowtie2-build -f ./raw_data/Crassostrea_gigas.GCA_000297895.1.24.dna_sm.genome.
 ./raw_data/Cgigas_ensembl_1.24
 ```
 
-####Use TopHat to assemble pre-heat shocked samples
+####Use TopHat to map reads from  pre-heat shocked samples
 
 ```
 tophat2 -p 16 ./raw_data/Crassostrea_gigas.GCA_000297895.1.24.dna_sm.genome \
@@ -184,11 +184,22 @@ tophat2 -p 16 ./raw_data/Crassostrea_gigas.GCA_000297895.1.24.dna_sm.genome \
 ./raw_data/6M_fastx_trimmed.fastq.gz
 ```
 
-####Use TopHat to assemble post-heat shocked samples
+####Use TopHat to map reads from post-heat shocked samples
 
 ```
 tophat2 -p 16 ./raw_data/Crassostrea_gigas.GCA_000297895.1.24.dna_sm.genome \
 ./raw_data/2MHS_fastx_trimmed.fastq.gz,\
 ./raw_data/4MHS_fastx_trimmed.fastq.gz,\
 ./raw_data/6MHS_fastx_trimmed.fastq.gz
+```
+
+###Use Cufflinks to assemble and transcriptomic data
+
+```
+$cufflinks ./analysis/tophat_preHS/tophat_out/accepted_hits.bam
+```
+
+
+```
+$cufflinks ./analysis/tophat_postHS/tophat_out/accepted_hits.bam
 ```
