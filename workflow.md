@@ -15,9 +15,10 @@
 * [6M-HS](http://owl.fish.washington.edu/nightingales/C_gigas/6M-HS_GTGAAA_L001_R1_001.fastq.gz)
 
 
-*Crassostrea gigas genome (Ensembl)
+*Crassostrea gigas genome (Ensembl)*
 
-* [Crassostrea_gigas.GCA_000297895.1.24.dna_sm.genome](ftp://ftp.ensemblgenomes.org/pub/metazoa/release-24/fasta/crassostrea_gigas/dna/Crassostrea_gigas.GCA_000297895.1.24.dna_sm.genome.fa.gz)
+* Crassostrea_gigas.GCA_000297895.1.24.dna_sm.genome
+ftp://ftp.ensemblgenomes.org/pub/metazoa/release-24/fasta/crassostrea_gigas/dna/Crassostrea_gigas.GCA_000297895.1.24.dna_sm.genome.fa.gz
 
 
 ###Software
@@ -162,5 +163,32 @@ fastqc --outdir=./analysis/fastqc/post_fastx_trim \
 ./raw_data/4M_fastx_trimmed.fastq.gz \
 ./raw_data/4MHS_fastx_trimmed.fastq.gz \
 ./raw_data/6M_fastx_trimmed.fastq.gz \
+./raw_data/6MHS_fastx_trimmed.fastq.gz
+```
+
+###Use TopHat to assemble trimmed reads to Ensembl genome
+
+####Build sequence index with Bowtie
+
+```
+$bowtie2-build -f ./raw_data/Crassostrea_gigas.GCA_000297895.1.24.dna_sm.genome.fa \
+./raw_data/Cgigas_ensembl_1.24
+```
+
+####Use TopHat to assemble pre-heat shocked samples
+
+```
+tophat2 -p 16 ./raw_data/Crassostrea_gigas.GCA_000297895.1.24.dna_sm.genome \
+./raw_data/2M_fastx_trimmed.fastq.gz,\
+./raw_data/4M_fastx_trimmed.fastq.gz,\
+./raw_data/6M_fastx_trimmed.fastq.gz
+```
+
+####Use TopHat to assemble post-heat shocked samples
+
+```
+tophat2 -p 16 ./raw_data/Crassostrea_gigas.GCA_000297895.1.24.dna_sm.genome \
+./raw_data/2MHS_fastx_trimmed.fastq.gz,\
+./raw_data/4MHS_fastx_trimmed.fastq.gz,\
 ./raw_data/6MHS_fastx_trimmed.fastq.gz
 ```
