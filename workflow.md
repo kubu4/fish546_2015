@@ -216,5 +216,17 @@ $find `pwd` -name "transcripts.gtf" >> ./analysis/cuffmerge/cuffmerge_manifest.t
 ####Run Cuffmerge
 
 ```
-$cuffmerge -p 7 ./analysis/cuffmerge/cufflinksManifest.txt
+$cuffmerge -p 16 ./analysis/cuffmerge/cufflinksManifest.txt
+```
+
+###Use Cuffquant to quantify gene and transcript expression
+
+```
+$cuffquant -p 16 ./analysis/cuffmerge/merged_asm/merged.gtf \
+./analysis/tophat_preHS/tophat_out/accepted_hits.bam
+```
+
+```
+$cuffquant -p 16 ./analysis/cuffmerge/merged_asm/merged.gtf \
+./analysis/tophat_postHS/tophat_out/accepted_hits.bam
 ```
