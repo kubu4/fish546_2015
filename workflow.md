@@ -58,4 +58,4 @@ $fastqc --outdir=./analysis/fastqc \
 /Volumes/Owl/nightingales/C_gigas/4M-HS_GTCCGC_L001_R1_001.fastq.gz \
 /Volumes/Owl/nightingales/C_gigas/6M_ATGTCA_L001_R1_001.fastq.gz \
 /Volumes/Owl/nightingales/C_gigas/6M-HS_GTGAAA_L001_R1_001.fastq.gz
-
+```
