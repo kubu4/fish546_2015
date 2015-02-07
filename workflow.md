@@ -52,10 +52,16 @@ All commands assume I'm in the following directory
 
 ```
 $fastqc --outdir=./analysis/fastqc \
-/Volumes/Owl/nightingales/C_gigas/2M_AGTCAA_L001_R1_001.fastq.gz \
-/Volumes/Owl/nightingales/C_gigas/2M-HS_CCGTCC_L001_R1_001.fastq.gz \
-/Volumes/Owl/nightingales/C_gigas/4M_AGTTCC_L001_R1_001.fastq.gz \
-/Volumes/Owl/nightingales/C_gigas/4M-HS_GTCCGC_L001_R1_001.fastq.gz \
-/Volumes/Owl/nightingales/C_gigas/6M_ATGTCA_L001_R1_001.fastq.gz \
-/Volumes/Owl/nightingales/C_gigas/6M-HS_GTGAAA_L001_R1_001.fastq.gz
+./raw_data/2M_AGTCAA_L001_R1_001.fastq.gz \
+./raw_data/2M-HS_CCGTCC_L001_R1_001.fastq.gz \
+./raw_data/4M_AGTTCC_L001_R1_001.fastq.gz \
+./raw_data/4M-HS_GTCCGC_L001_R1_001.fastq.gz \
+./raw_data//6M_ATGTCA_L001_R1_001.fastq.gz \
+./raw_data/6M-HS_GTGAAA_L001_R1_001.fastq.gz
+```
+
+###Trim first 15 nucleotides with fastx_trimmer
+
+```
+
 ```
