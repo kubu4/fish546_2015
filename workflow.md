@@ -203,3 +203,18 @@ $cufflinks ./analysis/tophat_preHS/tophat_out/accepted_hits.bam
 ```
 $cufflinks ./analysis/tophat_postHS/tophat_out/accepted_hits.bam
 ```
+
+###Use Cuffmerge to assemble both transciptomes into a single reference transcriptome
+
+####Create Cuffmerge manifest
+Cuffmerge requires full paths to the transcripts.gtf files in the Cuffmerge manifest
+
+```
+$find `pwd` -name "transcripts.gtf" >> ./analysis/cuffmerge/cuffmerge_manifest.txt
+```
+
+####Run Cuffmerge
+
+```
+$cuffmerge -p 7 ./analysis/cuffmerge/cufflinksManifest.txt
+```
