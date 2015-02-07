@@ -36,13 +36,13 @@
 * Cuffdiff
 * CummeRbund
 
--[BLAST+ 2.2.29](ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.29/)
+-BLAST+ 2.2.29 ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.29/
 
 * tblastx
 
 ---
 
-###Workflow
+##Workflow
 
 All commands assume I'm in the following directory
 
@@ -68,6 +68,7 @@ gunzip files
 
 >Should be done with a for loop
 >so that the code is usable outside of this project.
+
 ```
 $gunzip ./raw_data/2M_AGTCAA_L001_R1_001.fastq.gz -c > \
 ./raw_data/2M_AGTCAA_L001_R1_001.fastq
@@ -104,10 +105,11 @@ $gunzip ./raw_data/6M_AGTCAA_L001_R1_001.fastq.gz -c > \
 ./raw_data/6M-HS_AGTCAA_L001_R1_001.fastq
 ```
 
-Trim first 15 nucleotides
+####Trim first 15 nucleotides
 
 >Should be changed to for loop
 >so that this isn't project specific
+
 ```
 $fastx_trimmer -Q33 -f 15 -z \
 -i ./raw_data/2M_CCGTCC_L001_R1_001.fastq \
@@ -147,5 +149,16 @@ $fastx_trimmer -Q33 -f 15 -z \
 $fastx_trimmer -Q33 -f 15 -z \
 -i ./raw_data/6M-HS_CCGTCC_L001_R1_001.fastq \
 -o ./raw_data/6MHS_fastx_trimmed.fastq.gz
+```
 
+###Use FASTQC to check post-trim sequence quality
+
+```
+fastqc --outdir=./analysis/fastqc/post_fastx_trim \
+./raw_data/2M_fastx_trimmed.fastq.gz \
+./raw_data/2MHS_fastx_trimmed.fastq.gz \
+./raw_data/4M_fastx_trimmed.fastq.gz \
+./raw_data/4MHS_fastx_trimmed.fastq.gz \
+./raw_data/6M_fastx_trimmed.fastq.gz \
+./raw_data/6MHS_fastx_trimmed.fastq.gz
 ```
