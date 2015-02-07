@@ -1,4 +1,4 @@
-Workflow for reproducing differential gene expression analysis in pre- and post-heat shock mantle tissue from Crassostrea gigas (Pacific oyster).
+##Workflow for reproducing differential gene expression analysis in pre- and post-heat shock mantle tissue from Crassostrea gigas (Pacific oyster).
 
 ###Illumina FASTQ Data (single-end reads)
 
@@ -33,6 +33,29 @@ Workflow for reproducing differential gene expression analysis in pre- and post-
 * Cufflinks
 * Cuffmerge
 * Cuffquant
-*  Cuffdiff
+* Cuffdiff
 * CummeRbund
+
+-[BLAST+ 2.2.29](ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.29/)
+
+* tblastx
+
+---
+
+###Workflow
+
+All commands assume I'm in the following directory
+
+/Volumes/Data/Sam/fish546_2015/gigasHSrnaSeq
+
+###Use FASTQC to check sequence quality
+
+```
+$fastqc --outdir=./analysis/fastqc \
+/Volumes/Owl/nightingales/C_gigas/2M_AGTCAA_L001_R1_001.fastq.gz \
+/Volumes/Owl/nightingales/C_gigas/2M-HS_CCGTCC_L001_R1_001.fastq.gz \
+/Volumes/Owl/nightingales/C_gigas/4M_AGTTCC_L001_R1_001.fastq.gz \
+/Volumes/Owl/nightingales/C_gigas/4M-HS_GTCCGC_L001_R1_001.fastq.gz \
+/Volumes/Owl/nightingales/C_gigas/6M_ATGTCA_L001_R1_001.fastq.gz \
+/Volumes/Owl/nightingales/C_gigas/6M-HS_GTGAAA_L001_R1_001.fastq.gz
 
