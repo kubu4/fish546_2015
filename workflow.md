@@ -15,7 +15,9 @@
 * [6M-HS](http://owl.fish.washington.edu/nightingales/C_gigas/6M-HS_GTGAAA_L001_R1_001.fastq.gz)
 
 
+*Crassostrea gigas genome (Ensembl)
 
+* [Crassostrea_gigas.GCA_000297895.1.24.dna_sm.genome](ftp://ftp.ensemblgenomes.org/pub/metazoa/release-24/fasta/crassostrea_gigas/dna/Crassostrea_gigas.GCA_000297895.1.24.dna_sm.genome.fa.gz)
 
 
 ###Software
