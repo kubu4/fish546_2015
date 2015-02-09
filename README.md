@@ -8,3 +8,4 @@ rendered in nbviewer
 * [Week 2: FastQC](http://nbviewer.ipython.org/github/kubu4/fish546_2015/blob/master/Week02_FASTQC_local.ipynb)
 * [Week 2: TopHat](http://nbviewer.ipython.org/github/kubu4/fish546_2015/blob/master/Week02_TopHat_local.ipynb)
 * [Week 2: Cufflinks](http://nbviewer.ipython.org/github/kubu4/fish546_2015/blob/master/Week02_Cufflinks_local.ipynb)
+* [Week 2: Annotation](http://nbviewer.ipython.org/github/kubu4/fish546_2015/blob/master/Week02_annotation_local.ipynb)
