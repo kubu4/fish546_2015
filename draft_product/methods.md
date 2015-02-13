@@ -1,11 +1,6 @@
 ###Sequence Quality Assessment
 
-Six Illumina (HiSeq2500) FASTQ sequencing files (three biological replicates each, from pre- and post-heat shock) were analyzed with FASTQC (v0.11.2).  
-> Need to determine what to do with output from FASTQC - just describe the results?
-
-> What constitutes "passing" qualities?
-
-All FASTQ files were processed with FASTX Trimmer (v0.0.13.2) and re-evaluated with FASTQC.
+Six Illumina (HiSeq2500) gzipped FASTQ sequencing files (100bp, single-end reads; three biological replicates each, from pre- and post-heat shock) were analyzed with FASTQC (v0.11.2). To perform quality trimming, the files were uncompressed with gunzip and the first 15 bases were trimmed with FASTX Trimmer (v0.0.13.2). Upon trimming completion, the FASTQ files were re-compressed with gzip and re-evaluated with FASTQC.
 
 ###Sequence Alignment
 
