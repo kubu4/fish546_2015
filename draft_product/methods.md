@@ -6,9 +6,9 @@ Six Illumina (HiSeq2500) gzipped FASTQ sequencing files (100bp, single-end reads
 
 A Bowtie (v2.1.0) sequence index was created using the Crassostrea gigas genome FASTA file from Ensembl: Crassostrea_gigas.GCA_000297895.1.24.dna_sm.genome.fa. TopHat (v2.0.13.OSX_x86_64), using default parameters was used to align the reads to the Bowtie sequence index.  The two sets of reads (pre- and post-heat shock) were aligned separately. Each TopHat output was directed to seperate directories. The TopHat analysis produced an output file called ```accepted_hits.bam```, which was used in subsequent steps in the RNA-seq workflow.
 
-###Sequence Annotation
+###Transcriptome Assembly & Quantification
 
-Sequences were identified with blastx (v?) by comparing them to the Swiss-Prot (downloaded DATE) protein database. Annotated sequences were further annotated using gene ontologies (GO) to categorize putative functions.
+Cufflinks, a component of the TopHat computing package, was used to assemble and quantify the reads from the pre- and post-heat shock, separately. The Cufflinks analysis was performed separately on each ```accepted_hits.bam``` file from the previous TopHat outputs. Additionally, the Cufflinks analyses utilized the Ensembl general transfer format (.gtf) file for sequence annotation information. Each analysis with Cufflinks analysis was directed to new, separate directories and generated a ```transcripts.gtf``` file to be used for combining the two transcriptomes in the next step of the workflow.
 
 
 ###Differential Gene Expression
