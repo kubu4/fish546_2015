@@ -1,4 +1,5 @@
 ###Core Files
+---
 ####RNA-Seq Data Files
 The following files are the raw sequencing reads produced by the Illumina HiSeq2500 platform.  That are compressed with gzip.
 
