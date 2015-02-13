@@ -4,7 +4,7 @@ Six Illumina (HiSeq2500) gzipped FASTQ sequencing files (100bp, single-end reads
 
 ###Sequence Alignment
 
-A Bowtie (v2.1.0) sequence index was created using the Crassostrea gigas genome FASTA file from Ensembl: Crassostrea_gigas.GCA_000297895.1.24.dna_sm.genome.fa. TopHat (v2.0.13.OSX_x86_64), using default parameters was used to align the reads to the Bowtie sequence index.  The two sets of reads (pre- and post-heat shock) were aligned separately. The TopHat output file, accepted_hits.bam, was converted to some file type
+A Bowtie (v2.1.0) sequence index was created using the Crassostrea gigas genome FASTA file from Ensembl: Crassostrea_gigas.GCA_000297895.1.24.dna_sm.genome.fa. TopHat (v2.0.13.OSX_x86_64), using default parameters was used to align the reads to the Bowtie sequence index.  The two sets of reads (pre- and post-heat shock) were aligned separately. Each TopHat output was directed to seperate directories. The TopHat analysis produced an output file called ```accepted_hits.bam```, which was used in subsequent steps in the RNA-seq workflow.
 
 > Should I have a supplemental file that lists the default parameters?
 
