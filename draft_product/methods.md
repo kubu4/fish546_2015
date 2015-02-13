@@ -10,11 +10,11 @@ A Bowtie (v2.1.0) sequence index was created using the Crassostrea gigas genome 
 
 ###Transcriptome Assembly & Quantification
 
-Cufflinks, a component of the TopHat computing package, was used to assemble and quantify the reads from the pre- and post-heat shock, separately. The Cufflinks analysis was performed on each ```accepted_hits.bam``` file from the previous TopHat outputs. Additionally, the Cufflinks analyses utilized the Ensembl general transfer format (.gtf) file for sequence annotation information. Each analysis with Cufflinks analysis was directed to new, separate directories and generated a ```transcripts.gtf``` file to be used for combining the two transcriptomes in the next step of the workflow.
+Cufflinks, a component of the Cufflinks computing package, was used to assemble and quantify the reads from the pre- and post-heat shock, separately. The Cufflinks analysis was performed on each ```accepted_hits.bam``` file from the previous TopHat outputs. Additionally, the Cufflinks analyses utilized the Ensembl general transfer format (.gtf) file associated with the Ensembl genome file for sequence annotation information. Each analysis with Cufflinks analysis was directed to new, separate directories and generated a ```transcripts.gtf``` file to be used for combining the two transcriptomes in the next step of the workflow.
 
 ###Merge Transcriptomes
 
-Using Cuffmerge, another component of the TopHat software, the two ```transcripts.gtf``` files from the Cufflinks process were merged together and the output file, ```merged.gtf```, was sent to a new directory. The ```merged.gtf``` file was used in the subsequent step of the analysis pipeline.
+Using Cuffmerge, another component of the Cufflink software, the two ```transcripts.gtf``` files from the Cufflinks process were merged together and the output file, ```merged.gtf```, was sent to a new directory. The ```merged.gtf``` file was used in the subsequent step of the analysis pipeline.
 
 ###Quantifying Gene and Transcript Expression
 
