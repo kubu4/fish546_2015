@@ -16,7 +16,9 @@ Cufflinks, a component of the TopHat computing package, was used to assemble and
 
 Using Cuffmerge, another component of the TopHat software, the two ```transcripts.gtf``` files from the Cufflinks process were merged together and the output file, ```merged.gtf```, was sent to a new directory. The ```merged.gtf``` file was used in the subsequent step of the analysis pipeline.
 
-###
+###Quantifying Gene and Transcript Expression
+
+Gene and transcript expression was determined using Cuffquant, another component of the Cufflinnks software package. Use the separate alignment files generated 
 
 ###Differential Gene Expression
 
