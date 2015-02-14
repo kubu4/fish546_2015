@@ -24,3 +24,6 @@ The following file is a FASTA file of the <em>Crassostrea gigas</em> genome, cur
 The following file is a general transfer format (GTF) file that contains annotation information (e.g. coding regions, intron regions, untranslated regions) about the Ensembl FASTA file.  Like the Ensembl FASTA file, this GTF file is curated and maintained by Ensembl.
 
 * Crassostrea_gigas.GCA_000297895.1.24.gtf
+
+###Analysis Files
+---
