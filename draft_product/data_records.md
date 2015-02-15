@@ -71,14 +71,24 @@ Output files:
   - unmapped.bam - All reads that did <em>not</em> align/map to the reference genome.
 * [BED](genome.ucsc.edu/FAQ/FAQformat.html#format1) - A tab-delimited text file that stores spatial information about contigs and their mapping/features within a reference genome. Three columns are required for a properly formatted BED file:
   1. chromosome/contig name
-  2. chromosome/contig starting position within the reference genome
-  3. chromosome/contig ending position within the reference genome. 
+  2. chromosome/contig starting position  (coordinate) within the reference genome
+  3. chromosome/contig ending position (coordinate) within the reference genome 
 
   There are nine additional features that can be included in a BED file. 
   
   TopHat produces the following BED files:
-  - deletions.bed
+  - deletions.bed - Shows the coordinates of nucleotide deletions discovered during mapping. This has the following five columns:
+    1. chromosome/contig name
+    2. chromosome/contig coordinate before the deletion
+    3. chromosome/contig coordinate after the deletion
+    4. name (i.e. contig annotation)
+    5. score (i.e. number of reads spanning deletion position)
   - insertions.bed
+    1. chromosome/contig name
+    2. chromosome/contig coordinate before the insertion
+    3. chromosome/contig coordinate after the insertion
+    4. name (i.e. contig annotation)
+    5. score (i.e. number of reads spanning deletion position)
   - junctions.bed
 
 * prep_reads.info - A text file that lists the min/max length of all input reads and lists the number of input reads and the number of output reads.
