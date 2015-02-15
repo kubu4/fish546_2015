@@ -22,7 +22,7 @@ The following file is a FASTA file of the <em>Crassostrea gigas</em> genome, cur
 * Crassostrea_gigas.GCA_000297895.1.24.dna_sm.genome.fa
 
 ####Genome Annotation File
-The following file is a general transfer format (GTF) file that contains annotation information (e.g. coding regions, intron regions, untranslated regions) about the Ensembl FASTA file.  Like the Ensembl FASTA file, this GTF file is curated and maintained by Ensembl.
+The following file is a gene transfer format ([GTF](http://mblab.wustl.edu/GTF22.html)) file that contains annotation information (e.g. coding regions, intron regions, untranslated regions) about the Ensembl FASTA file.  Like the Ensembl FASTA file, this GTF file is curated and maintained by Ensembl.
 
 * Crassostrea_gigas.GCA_000297895.1.24.gtf
 
@@ -30,7 +30,7 @@ The following file is a general transfer format (GTF) file that contains annotat
 ###Analysis Files
 ---
 
-####Quality Evaluation (FastQC)
+####Quality Evaluation ([FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/))
 
 FastQC evaluates fastq files for sequence quality at each nucleotide postion. It also examines fastq files for over-represented sequences (e.g. Illumina adaptors, kmer repeats, etc) and overall GC content. 
 
@@ -45,7 +45,7 @@ Output files:
   - Icons/ - A folder containing the icons used in the HTML file that is generated.
   - Images/ - A folder cotaining the graphs used in the HTML file that is generated.
 
-####Quality Trimming (FASTA/Q Trimmer)
+####Quality Trimming ([FASTA/Q Trimmer](http://hannonlab.cshl.edu/fastx_toolkit/))
 
 FASTA/Q Trimmer is a component of the FASTX-Toolkit. FASTA/Q Trimmer trims input fastq files (note: it cannot process gzipped fastq files) on a range of nucleotides specified by the user.
 
@@ -53,14 +53,14 @@ Output files:
 
 * FASTQ or FASTQ.GZ - Input format is not altered, but allows the user to specify if output should be gzipped or not.
 
-####Genome Index (Bowtie)
+####Genome Index ([Bowtie](http://bowtie-bio.sourceforge.net/))
 
 Bowtie is used to create a set of index files, generated from a genome fasta file,to be used by TopHat for short read alignments.
 
 Output files:
 * BT2 - A binary file generated from the input genome fasta file. A set of these files are generated and the number generated is dependent on the input genome size.
 
-####Read Alignment (TopHat)
+####Read Alignment ([TopHat](http://ccb.jhu.edu/software/tophat/index.shtml))
 
 TopHat utilizes Bowtie to map reads to the reference genome and then identifies splice junctions between exons.
 
