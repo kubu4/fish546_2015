@@ -79,7 +79,7 @@ Output files:
   TopHat produces the following BED files:
   - deletions.bed & insertions.bed - These two files show the coordinates of nucleotide deletions/insertions discovered during mapping. This has the following five columns:
   
-|Chromosome/Contig Name|Coordinate Before Deletion|Coordinate After Deletion|Contig Annotation|No. Reads Spanning Deletion|
+|Chromosome/Contig Name|Coordinate Before Deletion/Insertion|Coordinate After Deletion/Insertion|Contig Annotation|No. Reads Spanning Deletion/Insertion|
 |----------------------|--------------------------|-------------------------|-----------------|------------------|
 
 * prep_reads.info - A text file that lists the min/max length of all input reads and lists the number of input reads and the number of output reads.
