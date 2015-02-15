@@ -105,3 +105,9 @@ Output files:
  * merged.gtf - A GTF file containing expression data of the merged transcriptomes.
  * logs/ - A directory that contains a variety of log files generated during the mapping/assembly stage.
   
+####Quantify Gene & Transcriptome Expression ([Cuffquant](http://cole-trapnell-lab.github.io/cufflinks/cuffquant/index.html))
+Generates gene and expression profiles from a file of alignments (```accepted_hits.bam```) and an annotation file (```genome_annotation.gtf```).
+
+Output file:
+
+* abundances.cxb - A binary file that can be used in the subsequent Cuffdiff or Cuffnorm step.
