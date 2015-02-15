@@ -50,3 +50,10 @@ FASTA/Q Trimmer is a component of the FASTX-Toolkit. FASTA/Q Trimmer trims input
 Output file type:
 
 * FASTQ or FASTQ.GZ - Input format is not altered, but allows the user to specify if output should be gzipped or not.
+
+####Genome Index (Bowtie)
+
+Bowtie is used to create a set of index files, generated from a genome fasta file,to be used by TopHat for short read alignments.
+
+Output file type:
+* BT2 - A binary file generated from the input genome fasta file. A set of these files are generated and the number generated is dependent on the input genome size.
