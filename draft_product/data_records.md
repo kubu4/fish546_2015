@@ -1,3 +1,4 @@
+---
 ###Core Files
 ---
 ####RNA-Seq Data Files
@@ -25,6 +26,7 @@ The following file is a general transfer format (GTF) file that contains annotat
 
 * Crassostrea_gigas.GCA_000297895.1.24.gtf
 
+---
 ###Analysis Files
 ---
 
