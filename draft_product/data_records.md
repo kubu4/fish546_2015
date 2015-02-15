@@ -43,4 +43,10 @@ Output file types:
   - Icons/ - A folder containing the icons used in the HTML file that is generated.
   - Images/ - A folder cotaining the graphs used in the HTML file that is generated.
 
-  ####Quality Trimming (fastx_trimmer)
+####Quality Trimming (FASTA/Q Trimmer)
+
+FASTA/Q Trimmer is a component of the FASTX-Toolkit. FASTA/Q Trimmer trims input fastq files (note: it cannot process gzipped fastq files) on a range of nucleotides specified by the user.
+
+Output file type:
+
+* FASTQ or FASTQ.GZ - Input format is not altered, but allows the user to specify if output should be gzipped or not.
