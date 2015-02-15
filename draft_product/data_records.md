@@ -36,3 +36,11 @@ Output file types:
 
 * HTML - This is a file that can be opened with any browser and contains graphs detailing the sequence quality of the input file at each sequencing position.
 * ZIP - This file contains the following files:
+  - fastqc_data_.txt - A text file representation of the HTML file.
+  - summary.txt - A text file that lists the various aspects of quality assessment and whether they pass, file, or generate a warning.
+  - fastqc_report.html - This is the same HTML file generated above.
+  - fastqc.fo - A text file containing the raw output from the FastQC analysis
+  - Icons/ - A folder containing the icons used in the HTML file that is generated.
+  - Images/ - A folder cotaining the graphs used in the HTML file that is generated.
+  - 
+  ####Quality Trimming (fastx_trimmer)
