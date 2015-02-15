@@ -69,7 +69,12 @@ Output files:
 * [BAM](http://samtools.github.io/hts-specs/SAMv1.pdf) - A binary version of a Sequnce Alignment/Map (SAM) file, compressed in the BGZF format. TopHat produces the following two BAM files:
   - accepted_hits.bam - All reads that were aligned/mapped to the reference genome.
   - unmapped.bam - All reads that did <em>not</em> align/map to the reference genome.
-* [BED](genome.ucsc.edu/FAQ/FAQformat.html#format1) - A tab-delimited text file that stores spatial information about contigs and their mapping/features within a reference genome. Three columns are required for a properly formatted BED file: chromosome/contig name, chromosome/contig starting position within the reference genome, and chromosome/contig ending position within the reference genome. There are nine additional features that can be included in a BED file. TopHat produces the following BED files:
+* [BED](genome.ucsc.edu/FAQ/FAQformat.html#format1) - A tab-delimited text file that stores spatial information about contigs and their mapping/features within a reference genome. Three columns are required for a properly formatted BED file:
+  1. chromosome/contig name
+  2. chromosome/contig starting position within the reference genome
+  3. chromosome/contig ending position within the reference genome. 
+
+  There are nine additional features that can be included in a BED file. TopHat produces the following BED files:
   - deletions.bed
   - insertions.bed
   - junctions.bed
