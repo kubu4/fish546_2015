@@ -27,3 +27,12 @@ The following file is a general transfer format (GTF) file that contains annotat
 
 ###Analysis Files
 ---
+
+####Quality Evaluation (FastQC)
+
+FastQC evaluates fastq files for sequence quality at each nucleotide postion. It also examines fastq files for over-represented sequences (e.g. Illumina adaptors, kmer repeats, etc) and overall GC content. 
+
+Output file types:
+
+* HTML - This is a file that can be opened with any browser and contains graphs detailing the sequence quality of the input file at each sequencing position.
+* ZIP - This file contains the following files:
