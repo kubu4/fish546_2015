@@ -42,5 +42,5 @@ Output file types:
   - fastqc.fo - A text file containing the raw output from the FastQC analysis
   - Icons/ - A folder containing the icons used in the HTML file that is generated.
   - Images/ - A folder cotaining the graphs used in the HTML file that is generated.
-  - 
+
   ####Quality Trimming (fastx_trimmer)
