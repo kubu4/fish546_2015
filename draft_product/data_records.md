@@ -34,7 +34,7 @@ The following file is a general transfer format (GTF) file that contains annotat
 
 FastQC evaluates fastq files for sequence quality at each nucleotide postion. It also examines fastq files for over-represented sequences (e.g. Illumina adaptors, kmer repeats, etc) and overall GC content. 
 
-Output file types:
+Output files:
 
 * HTML - This is a file that can be opened with any browser and contains graphs detailing the sequence quality of the input file at each sequencing position.
 * ZIP - This file contains the following files:
@@ -49,7 +49,7 @@ Output file types:
 
 FASTA/Q Trimmer is a component of the FASTX-Toolkit. FASTA/Q Trimmer trims input fastq files (note: it cannot process gzipped fastq files) on a range of nucleotides specified by the user.
 
-Output file type:
+Output files:
 
 * FASTQ or FASTQ.GZ - Input format is not altered, but allows the user to specify if output should be gzipped or not.
 
@@ -57,5 +57,19 @@ Output file type:
 
 Bowtie is used to create a set of index files, generated from a genome fasta file,to be used by TopHat for short read alignments.
 
-Output file type:
+Output files:
 * BT2 - A binary file generated from the input genome fasta file. A set of these files are generated and the number generated is dependent on the input genome size.
+
+####Read Alignment (TopHat)
+
+TopHat utilizes Bowtie to map reads to the reference genome and then identifies splice junctions between exons.
+
+Output files:
+* align_summary.txt - A text file that contains the number of input reads, the number of reads that mapped, and the number of reads with multiple alignments.
+* [BAM](http://samtools.github.io/hts-specs/SAMv1.pdf) - A binary version of a Sequnce Alignment/Map (SAM) file, compressed in the BGZF format. TopHat produces the following two BAM files:
+  - accepted_hits.bam - All reads that were aligned/mapped to the reference genome.
+  - unmapped.bam - All reads that did <em>not</em> align/map to the reference genome.
+* [BED](genome.ucsc.edu/FAQ/FAQformat.html#format1) - A tab-delimited text file that stores spatial information about contigs and their mapping/features within a reference genome. Three columns are required for a properly formatted BED file: chromosome/contig name, chromosome/contig starting position within the reference genome, and chromosome/contig ending position within the reference genome. There are nine additional features that can be included in a BED file. TopHat produces the following BED files:
+  - deletions.bed
+  - insertions.bed
+  - junctions.bed
