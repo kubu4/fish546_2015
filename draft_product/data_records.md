@@ -74,7 +74,12 @@ Output files:
   2. chromosome/contig starting position within the reference genome
   3. chromosome/contig ending position within the reference genome. 
 
-  There are nine additional features that can be included in a BED file. TopHat produces the following BED files:
+  There are nine additional features that can be included in a BED file. 
+  
+  TopHat produces the following BED files:
   - deletions.bed
   - insertions.bed
   - junctions.bed
+
+* prep_reads.info - A text file that lists the min/max length of all input reads and lists the number of input reads and the number of output reads.
+* logs/ - A directory that contains a variety of log files generated during the mapping/assembly stage.
