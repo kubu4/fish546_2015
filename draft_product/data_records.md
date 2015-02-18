@@ -106,7 +106,7 @@ Output files:
  * logs/ - A directory that contains a variety of log files generated during the mapping/assembly stage.
   
 ####Quantify Gene & Transcriptome Expression ([Cuffquant](http://cole-trapnell-lab.github.io/cufflinks/cuffquant/index.html))
-Generates gene and expression profiles from a file of alignments (```accepted_hits.bam```) and an annotation file (```Crassostrea_gigas.GCA_000297895.1.24.gtf```).
+Generates gene and expression profiles from a file of alignments (```accepted_hits.bam```) and an annotation file (```merged.gtf```).
 
 Output file:
 
