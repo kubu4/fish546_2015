@@ -1,0 +1,11 @@
+CGI_ID	SPID	evalue	Description
+CGI_10000001	Q9CR41	2E-29	Huntingtin-interacting protein K
+CGI_10000002	Q25381	2E-50	Actin, muscle
+CGI_10000003	Q5M8C6	3E-13	Fibrinogen-like protein 1
+CGI_10000011	D2GXS7	1E-09	Tripartite motif-containing protein 2
+CGI_10000012	P07813	4E-142	Leucine--tRNA ligase
+CGI_10000013	P49411	2E-32	Elongation factor Tu, mitochondrial
+CGI_10000015	Q9BYW2	3E-38	Histone-lysine N-methyltransferase SETD2
+CGI_10000016	P86854	2E-12	Perlucin-like protein
+CGI_10000019	Q5JXM2	9E-09	UPF0624 protein C6orf186
+CGI_10000021	Q92090	4E-07	Cytochrome P450 2K1
