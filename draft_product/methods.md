@@ -14,7 +14,7 @@ Cufflinks, a component of the Cufflinks computing package (2.2.1.OSX_x86_64), wa
 
 ###Merge Transcriptomes
 
-Using Cuffmerge, another component of the Cufflink software, the two ```transcripts.gtf``` files from the Cufflinks process were merged together and the output file, ```merged.gtf```, was sent to a new directory. The ```merged.gtf``` file was used in the subsequent step of the analysis pipeline.
+Using Cuffmerge, another component of the Cufflink software, the two ```transcripts.gtf``` files from the Cufflinks process were merged together and the output file, ```merged.gtf```, was sent to a new directory. The ```merged.gtf``` file was used in the subsequent step of the analysis pipeline. Cuffmerge functions to create a master transcriptome, incorporating reference transcripts for annotation.
 
 ###Quantifying Gene and Transcript Expression
 
