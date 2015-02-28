@@ -8,7 +8,7 @@ Software used in this project:
 
 -FastQC v0.1
 
--fastx_toolkit v0.0.13.2
+-FASTA/Q Trimmer (v0.0.13.2)
   - fastx_trimmer
 
 -Cufflinks Package v2.2.1
