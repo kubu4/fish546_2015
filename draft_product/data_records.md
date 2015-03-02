@@ -24,7 +24,7 @@ The following file is a FASTA file of the <em>Crassostrea gigas</em> genome, cur
 ####Genome Annotation File
 The following file is a gene transfer format ([GTF](http://uswest.ensembl.org/info/website/upload/gff.html?redirect=no)) file that contains annotation information (e.g. coding regions, intron regions, untranslated regions) about the Ensembl FASTA file.  Like the Ensembl FASTA file, this GTF file is curated and maintained by Ensembl.
 
-* Crassostrea_gigas.GCA_000297895.1.24.gtf
+* [Crassostrea_gigas.GCA_000297895.1.24.gtf](http://eagle.fish.washington.edu/trilobite/Crassostrea_gigas_ensembl_tracks/Crassostrea_gigas.GCA_000297895.1.24.gtf)
 
 ---
 ###Analysis Files
