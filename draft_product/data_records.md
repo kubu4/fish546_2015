@@ -2,19 +2,19 @@
 ###Core Files
 ---
 ####RNA-Seq Data Files
-The following files are the raw sequencing reads produced by the Illumina HiSeq2500 platform.  That are compressed with gzip.
+The following files are the raw sequencing reads produced by the Illumina HiSeq2500 platform.  That are compressed with gzip. All the raw data for this project is located here: 
 
-* 2M-HS_CCGTCC_L001_R1_001.fastq.gz
+* [2M_AGTCAA_L001_R1_001.fastq.gz](http://owl.fish.washington.edu/nightingales/C_gigas/2M_AGTCAA_L001_R1_001.fastq.gz)
 
-* 2M_AGTCAA_L001_R1_001.fastq.gz
+* [2M-HS_CCGTCC_L001_R1_001.fastq.gz](http://owl.fish.washington.edu/nightingales/C_gigas/2M-HS_CCGTCC_L001_R1_001.fastq.gz)
 
-* 4M-HS_GTCCGC_L001_R1_001.fastq.gz
+* [4M_AGTTCC_L001_R1_001.fastq.gz](http://owl.fish.washington.edu/nightingales/C_gigas/4M_AGTTCC_L001_R1_001.fastq.gz)
 
-* 4M_AGTTCC_L001_R1_001.fastq.gz
+* [4M-HS_GTCCGC_L001_R1_001.fastq.gz](http://owl.fish.washington.edu/nightingales/C_gigas/4M-HS_GTCCGC_L001_R1_001.fastq.gz)
 
-* 6M-HS_GTGAAA_L001_R1_001.fastq.gz
+* [6M_ATGTCA_L001_R1_001.fastq.gz](http://owl.fish.washington.edu/nightingales/C_gigas/6M_ATGTCA_L001_R1_001.fastq.gz)
 
-* 6M_ATGTCA_L001_R1_001.fastq.gz
+* [6M-HS_GTGAAA_L001_R1_001.fastq.gz](http://owl.fish.washington.edu/nightingales/C_gigas/6M-HS_GTGAAA_L001_R1_001.fastq.gz)
 
 ####Genome File
 The following file is a FASTA file of the <em>Crassostrea gigas</em> genome, curated and maintained by Ensembl
