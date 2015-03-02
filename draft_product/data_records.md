@@ -53,13 +53,6 @@ Output files:
 
 * FASTQ or FASTQ.GZ - Input format is not altered, but allows the user to specify if output should be gzipped or not.
 
-####Genome Index ([Bowtie](http://bowtie-bio.sourceforge.net/))
-
-Bowtie is used to create a set of index files, generated from a genome fasta file,to be used by TopHat for short read alignments.
-
-Output files:
-* BT2 - A binary file generated from the input genome fasta file. A set of these files are generated and the number generated is dependent on the input genome size.
-
 ####Read Alignment ([TopHat](http://ccb.jhu.edu/software/tophat/index.shtml))
 
 TopHat utilizes Bowtie to map reads to the reference genome and then identifies splice junctions between exons.
