@@ -1,3 +1,0 @@
-file	condition	replicate_num	total_mass	norm_mass	internal_scale	external_scale
-./analysis/cuffquant/pre_HS/pre_HS_abundances.cxb	q1	0	2.56791e+07	1.99469e+07	1.24517	1
-./analysis/cuffquant/post_HS/post_HS_abundances.cxb	q2	0	1.54788e+07	1.99469e+07	0.803219	1

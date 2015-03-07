@@ -1,5 +1,0 @@
-param	value
-cmd_line	cuffdiff -p 16 /Volumes/Eagle/trilobite/Crassostrea_gigas_ensembl_tracks/Crassostrea_gigas.GCA_000297895.1.24.gtf ./analysis/cuffquant/pre_HS/pre_HS_abundances.cxb ./analysis/cuffquant/post_HS/post_HS_abundances.cxb -o ./analysis/cuffdiff/ 
-version	2.2.1
-SVN_revision	4237
-boost_version	105500
