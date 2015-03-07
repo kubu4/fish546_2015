@@ -39,3 +39,12 @@
 ./gigasHSrnaSeq/raw_data/6M_ATGTCA_L001_R1_001.fastq
 ./gigasHSrnaSeq/raw_data/6M_fastx_trimmed.fastq.gz
 ./gigasHSrnaSeq/raw_data/6MHS_fastx_trimmed.fastq.gz
+gigasHSrnaSeq/analysis/cuffdiff/
+./gigasHSrnaSeq/analysis/cuffdiff/
+./gigasHSrnaSeq/analysis/cufflinks_preHS/
+./gigasHSrnaSeq/analysis/cufflinks_postHS/
+./gigasHSrnaSeq/analysis/cuffquant/
+gigasHSrnaSeq/analysis/cufflinks_preHS/
+gigasHSrnaSeq/analysis/cufflinks_postHS/
+gigasHSrnaSeq/analysis/cuffmerge/
+gigasHSrnaSeq/analysis/cuffquant/
