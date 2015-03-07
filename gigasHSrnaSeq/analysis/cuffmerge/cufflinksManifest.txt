@@ -1,0 +1,2 @@
+/Volumes/Data/Sam/fish546_2015/gigasHSrnaSeq/analysis/cufflinks_preHS/transcripts.gtf
+/Volumes/Data/Sam/fish546_2015/gigasHSrnaSeq/analysis/cufflinks_postHS/transcripts.gtf
