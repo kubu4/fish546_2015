@@ -1,3 +1,5 @@
+##Methods
+
 All analyses were performed using the default paramaters for each piece of software, unless otherwise noted.
 
 ###Sequence Quality Assessment
