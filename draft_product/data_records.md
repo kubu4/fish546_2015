@@ -57,8 +57,8 @@ Output files:
 
 TopHat utilizes Bowtie to map reads to the reference genome and then identifies splice junctions between exons.
 
-Output files:
-* align_summary.txt - A text file that contains the number of input reads, the number of reads that mapped, and the number of reads with multiple alignments.
+#####Output Files
+TopHat outputs a human-readable text file that contains the number of input reads, the number of reads that mapped, and the number of reads with multiple alignments, called ```align_summary.txt```. The pre-heat shock TopHat analysis ```align_summary.txt``` indicates 76,612,745 input reads, while the post-heat shock shows 60,567,172 input reads. Additionally, 71.5% of the pre-heat shock reads mapped, while 67.2% of the post-heat shock reads were successfully mapped. Finally, 9.4% of the pre-heat shock reads have multiple alignments and the post-heat shock reads show 10.7% having multiple alignments.
 * [BAM](http://samtools.github.io/hts-specs/SAMv1.pdf) - A binary version of a Sequnce Alignment/Map (SAM) file, compressed in the BGZF format. TopHat produces the following two BAM files:
   - accepted_hits.bam - All reads that were aligned/mapped to the reference genome.
   - unmapped.bam - All reads that did <em>not</em> align/map to the reference genome.
