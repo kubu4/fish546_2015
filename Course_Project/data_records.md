@@ -83,3 +83,5 @@ Cuffdiff determines changes in gene expression differences and identifies differ
 * count_tracking
 * read_group_tracking
 * diff
+
+Two files ```gene_exp.diff``` and ```isoform_exp.diff``` contain the comparison of expression values between the pre- and post-heat shocked samples. The ```gene_exp.diff``` file contains expression differences at the gene level, while the ```isoform_exp.diff``` file contains expression differences at the transcript level.
