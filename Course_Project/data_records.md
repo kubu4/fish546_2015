@@ -32,7 +32,7 @@ The following file is a gene transfer format ([GTF](http://uswest.ensembl.org/in
 
 ####Jupyter (IPython) Notebook
 
-The [Jupyter](http://ipython.org/) notebook serves two purposes. It documents the analysis performed for this project, and thus, serves as a product of this project. Additionally, it serves as a tool to enable reproducibility of this project.
+The [Jupyter](http://ipython.org/) notebook, [RNAseq_TopHat_Cufflinks_Workflow.ipynb](http://nbviewer.ipython.org/github/kubu4/fish546_2015/blob/master/Course_Project/RNAseq_TopHat_Cufflinks_Workflow.ipynb),  serves two purposes. It documents the analysis performed for this project, and thus, serves as a product of this project. Additionally, it serves as a tool to enable reproducibility of this project.
 
 ---
 
