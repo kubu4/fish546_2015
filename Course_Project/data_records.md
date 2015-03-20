@@ -43,8 +43,6 @@ TopHat utilizes Bowtie to map reads to the reference genome and then identifies 
 #####Output Files
 TopHat outputs a human-readable text file that contains the number of input reads, the number of reads that mapped, and the number of reads with multiple alignments, called ```align_summary.txt```. The pre-heat shock TopHat analysis ```align_summary.txt``` indicates 76,612,745 input reads, while the post-heat shock shows 60,567,172 input reads. Additionally, 71.5% of the pre-heat shock reads mapped, while 67.2% of the post-heat shock reads were successfully mapped. Finally, 9.4% of the pre-heat shock reads have multiple alignments and the post-heat shock reads show 10.7% having multiple alignments.
 
-TopHat will also produce two [BAM](http://samtools.github.io/hts-specs/SAMv1.pdf) files. This is a binary version of a Sequnce Alignment/Map (SAM) file, compressed in the BGZF format. TopHat produces the following two BAM files ```accepted_hits.bam``` and ```unmapped.bam```. Although not human-readable they are required for downstream processing in this workflow.
-
 Additionally, three [BED](genome.ucsc.edu/FAQ/FAQformat.html#format1) files are generated: ```junctions.bed```, ```deletions.bed```, and ```insertions.bed```. These are human-readable, tab-delimited text files that store spatial information about contigs and their mapping/features within a reference genome. The pre-heat shock analysis reveals 192,994 splice junctions, 191,099 deletions, and 132,679 insertions. The post-heat shock samples identify 169,839 splice junctions, 141,387 deletions, and 109,791 insertions.
 
 ####Transcriptome Assembly & Quantification ([Cufflinks](http://cole-trapnell-lab.github.io/cufflinks/cufflinks/index.html))
