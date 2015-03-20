@@ -34,6 +34,8 @@ The following file is a gene transfer format ([GTF](http://uswest.ensembl.org/in
 
 The [Jupyter](http://ipython.org/) notebook serves two purposes. It documents the analysis performed for this project, and thus, serves as a product of this project. Additionally, it serves as a tool to enable reproducibility of this project.
 
+---
+
 ####Read Alignment ([TopHat](http://ccb.jhu.edu/software/tophat/index.shtml))
 
 TopHat utilizes Bowtie to map reads to the reference genome and then identifies splice junctions between exons.
