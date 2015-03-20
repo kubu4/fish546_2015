@@ -3,6 +3,9 @@
 ####Products/
 This directory contains all products generated from the analysis of this project. The products within are described in detail in the [data_records.md](https://github.com/kubu4/fish546_2015/blob/master/Course_Project/data_records.md) file.
 
+####Reproducibility/
+This directory contains the [Jupyter (IPython)](http://ipython.org/) notebook and the sub-directories used by the notebook in order to reproduce the products in this project.
+
 ####background.md
 Provides a brief summary of the underlying experiment and goals of this project.
 
