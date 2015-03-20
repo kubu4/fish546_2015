@@ -27,31 +27,8 @@ The following file is a gene transfer format ([GTF](http://uswest.ensembl.org/in
 * [Crassostrea_gigas.GCA_000297895.1.24.gtf](http://eagle.fish.washington.edu/trilobite/Crassostrea_gigas_ensembl_tracks/Crassostrea_gigas.GCA_000297895.1.24.gtf)
 
 ---
-###Analysis Files
+###Products
 ---
-
-####Quality Evaluation ([FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/))
-
-FastQC evaluates fastq files for sequence quality at each nucleotide postion. It also examines fastq files for over-represented sequences (e.g. Illumina adaptors, kmer repeats, etc) and overall GC content. 
-
-Output files:
-
-* HTML - This is a file that can be opened with any browser and contains graphs detailing the sequence quality of the input file at each sequencing position.
-* ZIP - This file contains the following files:
-  - fastqc_data_.txt - A text file representation of the HTML file.
-  - summary.txt - A text file that lists the various aspects of quality assessment and whether they pass, file, or generate a warning.
-  - fastqc_report.html - This is the same HTML file generated above.
-  - fastqc.fo - A text file containing the raw output from the FastQC analysis
-  - Icons/ - A folder containing the icons used in the HTML file that is generated.
-  - Images/ - A folder cotaining the graphs used in the HTML file that is generated.
-
-####Quality Trimming ([FASTA/Q Trimmer](http://hannonlab.cshl.edu/fastx_toolkit/))
-
-FASTA/Q Trimmer is a component of the FASTX-Toolkit. FASTA/Q Trimmer trims input fastq files (note: it cannot process gzipped fastq files) on a range of nucleotides specified by the user.
-
-Output files:
-
-* FASTQ or FASTQ.GZ - Input format is not altered, but allows the user to specify if output should be gzipped or not.
 
 ####Read Alignment ([TopHat](http://ccb.jhu.edu/software/tophat/index.shtml))
 
